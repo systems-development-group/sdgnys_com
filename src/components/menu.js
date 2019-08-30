@@ -23,31 +23,31 @@ const menuItems = [
         Products<span className="sf-sub-indicator"> »</span>
       </>
     ),
-    to: "/products",
+    to: "/project/image-mate-online",
     submenu: [
       {
         title: "Outpost",
-        to: "/outpost",
+        to: "/project/outpost",
       },
       {
         title: "Image Mate Online",
-        to: "/image-mate-online",
+        to: "/project/image-mate-online",
       },
       {
         title: "IMO Plugins",
-        to: "/plugins",
+        to: "/project/plugins",
       },
       {
         title: "Image Mate Desktop",
-        to: "/image-mate-desktop",
+        to: "/project/image-mate-desktop",
       },
       {
         title: "Image Mate Enterprise",
-        to: "/image-mate-enterprise",
+        to: "/project/image-mate-enterprise",
       },
       {
         title: "SIMS",
-        to: "/sims",
+        to: "/project/sims",
       },
     ],
   },
@@ -91,7 +91,7 @@ const SubMenu = ({ show, items }) => (
         <Link
           to={item.to}
           style={{ float: "none", width: "auto" }}
-          activeStyle={{ color: "#2e2e2e" }}
+          activeClassName="active"
         >
           {item.title}
         </Link>
@@ -109,7 +109,7 @@ function MenuItem({ item }) {
       ${item.submenu ? "menu-item-has-children" : ""}
       ${isHovered ? "sfHover" : ""}`}
     >
-      <Link to={item.to} activeStyle={{ color: "#2e2e2e" }}>
+      <Link to={item.to} activeClassName="active">
         {item.title}
       </Link>
       {item.submenu && <SubMenu items={item.submenu} show={isHovered} />}

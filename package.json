@@ -3,7 +3,7 @@
   "private": true,
   "description": "sdgnys.com with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Dmitriy Chernukho (gormonn@rambler.ru)",
   "dependencies": {
     "@kennethormandy/react-fittext": "^0.6.0",
     "gatsby": "^2.13.67",
@@ -23,10 +23,7 @@
   "devDependencies": {
     "prettier": "^1.18.2"
   },
-  "keywords": [
-    "react",
-    "gatsby"
-  ],
+  "keywords": ["react", "gatsby"],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
