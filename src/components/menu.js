@@ -106,8 +106,8 @@ function MenuItem({ item }) {
         <li
             ref={hoverRef}
             className={`${menuItemClasses}
-      ${item.submenu ? "menu-item-has-children" : ""}
-      ${isHovered ? "sfHover" : ""}`}
+            ${item.submenu ? "menu-item-has-children" : ""}
+            ${isHovered ? "sfHover" : ""}`}
         >
             <Link to={item.to} activeClassName="active">
                 {item.title}

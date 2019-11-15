@@ -4,23 +4,23 @@ import { useHover } from "../hooks/"
 import outpost from "../theme/images/outpost-300x175.jpg"
 import test2 from "../theme/images/test2-300x175.jpg"
 import plugins from "../theme/images/plugins-300x175.jpg"
-import imagemateent from "../theme/images/imagemateent-300x175.jpg"
+// import imagemateent from "../theme/images/imagemateent-300x175.jpg"
 
 
 const projects = [
     {
         title: "Outpost",
-        to: "/outpost-2",
+        to: "/project/outpost",
         img: outpost,
     },
     {
         title: "Image Mate Online",
-        to: "/image-mate-online",
+        to: "/project/image-mate-online",
         img: test2,
     },
     {
         title: "Plugins",
-        to: "/plugins",
+        to: "/project/plugins",
         img: plugins,
     }
     // {

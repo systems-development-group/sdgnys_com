@@ -1,4 +1,4 @@
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import React from "react"
 import Menu from "./menu.js"
 import logo from "../theme/images/sdg-logo2.png"
