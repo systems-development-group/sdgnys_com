@@ -2118,3 +2118,8 @@ ol#commentslist {
 		font-size: .8em;
 	}	
 }
+
+.footerText {
+	color: #e1dcdc;
+	 /* #f9f1f1; */
+}
