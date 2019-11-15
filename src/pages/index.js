@@ -4,6 +4,8 @@ import Products from "../components/products"
 import HomeBanner from "../components/homebanner"
 import "../theme/style.css"
 
+// TODO: This should use the layout component (or at least a footer component.)
+
 function IndexPage() {
     const currentYear = (new Date()).getFullYear()
     return (

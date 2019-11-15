@@ -3,6 +3,7 @@ import React from "react"
 import { useHover } from "../hooks/index.js"
 import "../theme/superfish.css"
 
+
 const menuItemClasses = `
   menu-item
   menu-item-type-post_type
@@ -23,7 +24,7 @@ const menuItems = [
                 Products<span className="sf-sub-indicator"> »</span>
             </>
         ),
-        to: "/project/image-mate-online",
+        to: "/",
         submenu: [
             {
                 title: "Outpost",
@@ -109,9 +110,7 @@ function MenuItem({ item }) {
             ${item.submenu ? "menu-item-has-children" : ""}
             ${isHovered ? "sfHover" : ""}`}
         >
-            <Link to={item.to} activeClassName="active">
-                {item.title}
-            </Link>
+            <Link to={item.to} activeClassName="active">{item.title}</Link>            
             {item.submenu && <SubMenu items={item.submenu} show={isHovered} />}
         </li>
     )
