@@ -89,8 +89,8 @@ const SubMenu = ({ show, items }) => (
                 }}
             >
                 <Link
-                    to={item.to}
-                    style={{ float: "none", width: "auto" }}
+                    to={item.to}                    
+                    style={{ float: "none", width: "auto"  }}
                     activeClassName="active"
                 >
                     {item.title}
