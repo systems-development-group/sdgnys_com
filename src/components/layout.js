@@ -13,7 +13,12 @@ import Footer from "./footer"
 import "../theme/style.css"
 
 
-const Layout = ({ children, title, prev, next }) => {
+const Layout = ({ 
+    children,
+    title, 
+    // prev, 
+    // next 
+}) => {
     // const data = useStaticQuery(graphql`
     //   query SiteTitleQuery {
     //     site {
