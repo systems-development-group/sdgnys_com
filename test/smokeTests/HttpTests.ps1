@@ -9,7 +9,9 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop";
 
 
-function CompareSiteVersion($filePath = $cacheFile) {
+function CompareSiteVersion(
+    [string] $filePath = $cacheFile
+) {
     $json = Get-Content -Path $filePath | ConvertFrom-Json 
     [long] $previousSiteVersion = $json.version_num
 
@@ -17,7 +19,7 @@ function CompareSiteVersion($filePath = $cacheFile) {
     [long] $currentSiteVersion = [long](Invoke-WebRequest -Uri $uriBase).InputFields.value
 
     $siteIsNew = $false
-    if ($currentSiteVersion -gt $previousSiteVersion) {
+    if ($currentSiteVersion -ge $previousSiteVersion) {
         $siteIsNew = $true
         ConvertTo-Json @{ version_num = $currentSiteVersion } | Out-File -Path $filePath
     }
@@ -26,8 +28,10 @@ function CompareSiteVersion($filePath = $cacheFile) {
 
 
 # Note that 'return' is stupid in Powershell and doesn't actually short-cicuit the function
-function RunTest_GetEndpoints($uriList) {
-    $result = @{ Flag = $true; Uri = '' }
+function RunTest_GetEndpoints(
+    [string[]] $uriList
+) {
+    $result = @{ Flag = $true; Uri = 'NO_FAILURES' }
     foreach ($uri in $uriList) {
         try {
             $response = Invoke-WebRequest -Uri $uri -Verbose
@@ -39,9 +43,9 @@ function RunTest_GetEndpoints($uriList) {
             $result = @{ Flag = $false; Uri = $uri }
             break
         }
-    }
+    }    
     return $result 
-}
+}git
 
 
 # Arrange
@@ -56,11 +60,6 @@ $UrisToGet = @(
     "$uriBase/project/plugins"
 )
 
-[bool] $testResult = $false
-Write-Host -ForegroundColor 'Yellow' `
-    'Waiting an arbitrary amount of time (30s) in an attempt to ensure deploy completes...'
-Start-Sleep -Seconds 30 -Verbose
-
 
 # Act
 [bool] $siteIsNew = CompareSiteVersion
@@ -69,7 +68,7 @@ if ($siteIsNew -eq $false) {
         'TEST ABORTED: Given the deployed site''s version number, it appears the deploy failed or hasn''t completed.' 
     exit
 }
-[bool] $testResult = RunTest_GetEndpoints -uriList $UrisToGet
+$testResult = RunTest_GetEndpoints -uriList $UrisToGet
 
 
 # Assert
@@ -82,10 +81,7 @@ Write-Host -ForegroundColor 'Green' "TESTS PASSED"
 
 
 # Trigger deploy
-# git checkout master
-
-# git merge staging
-
-# git push
-
-# git checkout staging
+git checkout master
+git merge staging
+git push
+git checkout staging
