@@ -1,14 +1,15 @@
 import React from "react"
 import Header from "../components/header"
+import Footer from "../components/footer"
 import Products from "../components/products"
 import HomeBanner from "../components/homebanner"
 import "../theme/style.css"
 
-// TODO: This should use the layout component (or at least a footer component.)
+// TODO: This should use the layout component 
 
 function IndexPage() {
-    const currentYear = (new Date()).getFullYear()
     return (
+        <input id="versionNum" style="hidden"></p>
         <div className="home page page-id-4 page-template-default">
             <div id="container">
                 <div id="header">
@@ -16,10 +17,12 @@ function IndexPage() {
                     <HomeBanner />
                 </div>
                 <Products />
+
+                <Footer />
+                {/* 
                 <div id="footer">
                     <div className="inside">
                         <div className="main clearfix" />
-                        {/* end footer main */}
                         <div className="secondary clearfix">
                             <div className="left">
                                 <p class="footerText">© {currentYear} Systems Development Group, Inc.</p>
@@ -30,12 +33,11 @@ function IndexPage() {
                                     (315) 798-1328
                                 </p>
                             </div>
-                        </div>
-                        {/* end footer secondary*/}
-                    </div>
-                    {/* end footer inside*/}
+                        </div>                        
+                    </div>                    
                 </div>
-                {/* end footer */}
+                */}
+
             </div>
         </div>
     )

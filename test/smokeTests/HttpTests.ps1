@@ -1,5 +1,9 @@
+# Prod site at URI below
+# [string] $uriBase = 'https://sdgnys.net'
+
 param(
-    [string] $uriBase = 'https://sdgnys.net'
+    # Netlify is set up to allow branch deploys to the URL below from repo's staging branch
+    [string] $uriBase = 'https://staging--thirsty-clarke-28e973.netlify.com'
 )
 
 Set-StrictMode -Version Latest
