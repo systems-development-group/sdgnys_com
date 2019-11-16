@@ -30,8 +30,6 @@ const Layout = ({
     // `)
     // const [toPrev, titlePrev] = prev || []
     // const [toNext, titleNext] = next || []
-    // const currentYear = (new Date()).getFullYear()
-
     return (
         <>
             <div id="container">

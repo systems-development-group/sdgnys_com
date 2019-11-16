@@ -11,11 +11,16 @@ If working with multiple contributors, you'll regularly need to update with the 
 Use the commands below.
 
 ```
-git fetch                  # get the changes from the remote repository. 
-git merge master           # merge them into your branch
-git push origin subbranch  # push your changes upstream
+# get the changes from the remote repository. 
+git fetch
+
+# merge them into your branch
+git merge master
+
+# push your changes upstream
+git push origin staging   
 ```
 
 The git fetch applies to all branches, including master. 
-The git merge creates a commit in your branch. Since you always work in your branch, you never commit nor push to master. 
+The git merge creates a commit in your branch. 
 

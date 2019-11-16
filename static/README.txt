@@ -1,0 +1,1 @@
+DOCS: https://www.gatsbyjs.org/docs/static-folder/

@@ -77,14 +77,14 @@ const Page = () => (
       </ul>
 
       <ul class="skillList clearfix" />
-      <p>
+      {/* <p>
         <a
           class="action"
           href="http://www.sdgnys.com.php53-7.dfw1-2.websitetestlink.com/project/outpost-2/"
         >
           Visit Site
         </a>
-      </p>
+      </p> */}
     </div>
   </Layout>
 )

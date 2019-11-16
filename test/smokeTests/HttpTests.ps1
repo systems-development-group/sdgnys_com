@@ -79,14 +79,22 @@ if ($testResult.Flag -eq $false) {
 }
 Write-Host -ForegroundColor 'Green' "TESTS PASSED"
 
+[string] $completionMsg = "`n`n" + `
+    "The next step is to merge the local staging branch into local master branch, `n" + `
+    "push to remote master so a deploy to production is triggered, `n" + `
+    "and checkout staging once again to continue working. HINT: Run the one-liner below. `n" + `
+    "git checkout master && git merge staging && git push && git checkout staging & git fetch & git merge master" 
+Write-Host -ForegroundColor 'Yello' $completionMsg
+    
 
-# File should have been modified
-git add -A 
-git commit -m "Timestamp updated by tests"
-# Trigger deploy by pushing to master
-git checkout master
-git pull
-git merge staging
-git push
-# Revert to dev branch
-git checkout staging
+
+# # A file should have been modified by tests if this portion of the script is running
+# git add -A 
+# git commit -m "Timestamp updated by tests"
+# # Trigger deploy by pushing to master
+# git checkout master
+# git pull
+# git merge staging
+# git push
+# # Revert to dev branch
+# git checkout staging
