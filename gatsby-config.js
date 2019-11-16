@@ -3,6 +3,7 @@ module.exports = {
         title: `SDG`,
         description: `Guiding Better Governance Through Technology`,
         author: `@systems-development-group`,
+        // We'll dump version_num to a hidden input and use it to identify when the deploy completed
         version_num: (new Date()).getTime()
     },
     plugins: [
