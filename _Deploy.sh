@@ -19,6 +19,6 @@ git push
 echo 'Sleeping for an arbitrary amount of time (30s) in an attempt to ensure deploy completes...'
 sleep 30s
 
+# This script will perform some git actions with branches and pushes
 echo 'Running smoke tests on staging'
 pwsh.exe ./test/SmokeTests/HttpTests.ps1
-

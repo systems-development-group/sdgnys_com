@@ -83,8 +83,9 @@ Write-Host -ForegroundColor 'Green' "TESTS PASSED"
 # File should have been modified
 git add -A 
 git commit -m "Timestamp updated by tests"
-# Trigger deploy
+# Trigger deploy by pushing to master
 git checkout master
+git pull
 git merge staging
 git push
 # Revert to dev branch
