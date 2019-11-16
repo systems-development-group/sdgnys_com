@@ -45,7 +45,7 @@ function RunTest_GetEndpoints(
         }
     }    
     return $result 
-}git
+}
 
 
 # Arrange
@@ -80,8 +80,12 @@ if ($testResult.Flag -eq $false) {
 Write-Host -ForegroundColor 'Green' "TESTS PASSED"
 
 
+# File should have been modified
+git add -A 
+git commit -m "Timestamp updated by tests"
 # Trigger deploy
 git checkout master
 git merge staging
 git push
+# Revert to dev branch
 git checkout staging
