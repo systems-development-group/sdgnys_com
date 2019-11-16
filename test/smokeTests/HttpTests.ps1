@@ -19,7 +19,7 @@ function CompareSiteVersion(
     [long] $currentSiteVersion = [long](Invoke-WebRequest -Uri $uriBase).InputFields.value
 
     $siteIsNew = $false
-    if ($currentSiteVersion -ge $previousSiteVersion) {
+    if ($currentSiteVersion -gt $previousSiteVersion) {
         $siteIsNew = $true
         ConvertTo-Json @{ version_num = $currentSiteVersion } | Out-File -Path $filePath
     }
