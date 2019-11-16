@@ -8,7 +8,7 @@ const Header = () => (
     <div id="logo">
       <h1 className="logo">
         <a href="https://www.sdgnys.com">
-          <img src={logo} />
+          <img src={logo} alt="SDG logo"/>
         </a>
       </h1>
     </div>

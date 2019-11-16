@@ -24,6 +24,7 @@ const NotFoundPage = () => (
               title="Parcel History Search"
               href="https://imo.washingtoncountyny.gov/index.aspxsaleshist/searchresults.aspx"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <em>Click Here for Site Example</em>
             </a>
@@ -47,6 +48,7 @@ const NotFoundPage = () => (
                 title="Pictometry Connect"
                 href="/wp-content/uploads/2014/01/pictometry.jpg"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Site Screenshot
               </a>
@@ -63,6 +65,7 @@ const NotFoundPage = () => (
               title="Tax Calculator Screenshot"
               href="/wp-content/uploads/2014/01/taxcalc.jpg"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <em>Site Screenshot</em>
             </a>
@@ -85,6 +88,7 @@ const NotFoundPage = () => (
                 title="Washington Tax Payment/History Example"
                 href="https://imo.washingtoncountyny.gov/index.aspxtaxpaymentinfo.aspx?swis=534600&sbl=00101400010190000000"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Example 1{" "}
               </a>
@@ -94,6 +98,7 @@ const NotFoundPage = () => (
                 title="Onondaga County Tax History/Payment Example"
                 href="http://ocfintax.ongov.net/Imate/propdetail.aspx?swis=312803&printkey=00100000010010000000"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Example 2
               </a>
@@ -111,6 +116,7 @@ const NotFoundPage = () => (
                 title="Cloud GIS Site Example"
                 href="http://sdg.giscloud.com/map/250086/chenango/787530/pin/07500000010072200000"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Example 1
               </a>
@@ -120,6 +126,7 @@ const NotFoundPage = () => (
               title="Cattaraugus County GIS Example"
               href="http://maps2.cattco.org/parcel/index.html?esearch=00500400010110020000&exprnum=2"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <em>Example 2</em>
             </a>

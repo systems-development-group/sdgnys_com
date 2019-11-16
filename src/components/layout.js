@@ -36,7 +36,7 @@ const Layout = ({ children, title, prev, next }) => {
                     <div id="main" className="clearfix">
                         <div id="pageHead">
                             <h1>{title}</h1>
-                            <div class="projectNav clearfix">
+                            {/* <div class="projectNav clearfix">
                                 {prev && (
                                     <div class="previous">
                                         <Link to={toPrev}>← {titlePrev}</Link>
@@ -47,7 +47,7 @@ const Layout = ({ children, title, prev, next }) => {
                                         <Link to={toNext}>{titleNext} →</Link>
                                     </div>
                                 )}
-                            </div>
+                            </div> */}
                         </div>
                         <div id="content" class="clearfix full">
                             <div class="post-27 page type-page status-publish hentry clearfix">
