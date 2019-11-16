@@ -65,7 +65,7 @@ $UrisToGet = @(
 [bool] $siteIsNew = CompareSiteVersion
 if ($siteIsNew -eq $false) {
     Write-Host -ForegroundColor 'Yellow' `
-        'TEST ABORTED: Given the deployed site''s version number, it appears the deploy failed or hasn''t completed.' 
+        'TEST ABORTED: Given the deployed site''s version number, it appears the staging deploy failed or hasn''t completed.' 
     exit
 }
 $testResult = RunTest_GetEndpoints -uriList $UrisToGet
