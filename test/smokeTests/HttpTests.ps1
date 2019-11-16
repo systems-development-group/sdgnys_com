@@ -51,3 +51,12 @@ if ($testResult.Flag -eq $false) {
     exit
 }
 Write-Host -ForegroundColor 'Green' "TESTS PASSED"
+
+
+git checkout master
+
+git merge staging
+
+git push
+
+git checkout staging

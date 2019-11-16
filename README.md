@@ -3,8 +3,10 @@
 
 ### Git Workflow
 
-Since the remote repo is set to auto-deploy to Staging on Pull Request,
+Since the remote repo is set to auto-deploy to Staging on Pull Requests to master,
+AND if/when commits are pushed to the 'staging' branch,
 you'll want to be working on the 'staging' branch most of the time.
+
 If working with multiple contributors, you'll regularly need to update with the changes from master.
 Use the commands below.
 

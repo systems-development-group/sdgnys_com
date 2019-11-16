@@ -1,3 +1,4 @@
+import { siteMetadata } from '../../gatsby-config'
 import React from "react"
 import Header from "../components/header"
 import Footer from "../components/footer"
@@ -8,9 +9,9 @@ import "../theme/style.css"
 // TODO: This should use the layout component 
 
 function IndexPage() {
-    return (
-        <input id="versionNum" style="hidden"></p>
+    return (        
         <div className="home page page-id-4 page-template-default">
+            <input id="versionNum" type="hidden" value={siteMetadata.version_num}/>
             <div id="container">
                 <div id="header">
                     <Header />

@@ -1,8 +1,9 @@
 module.exports = {
     siteMetadata: {
-        title: `SYSTEMS DEVELOPMENT GROUP`,
+        title: `SDG`,
         description: `Guiding Better Governance Through Technology`,
         author: `@systems-development-group`,
+        version_num: (new Date()).getTime()
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
