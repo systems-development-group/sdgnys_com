@@ -15,7 +15,7 @@
     },
     "dependencies": {
         "@kennethormandy/react-fittext": "^0.6.0",
-        "gatsby": "^2.13.67",
+        "gatsby": "^2.19.32",
         "gatsby-image": "^2.2.8",
         "gatsby-plugin-manifest": "^2.2.5",
         "gatsby-plugin-offline": "^2.2.6",

@@ -24,3 +24,10 @@ git push origin staging
 The git fetch applies to all branches, including master. 
 The git merge creates a commit in your branch. 
 
+
+### Getting started
+
+- Clone this repo
+- Run an npm install (if it fails, retry (possibly as admin))
+- Checkout the staging branch
+- 
