@@ -21,7 +21,7 @@ const Page = () => (
                 Jay Franklin<br />
                 Assistant Director of Assessment<br />
                 Tompkins County<br />
-                
+
             </h4>
         </blockquote>
 
@@ -41,8 +41,8 @@ const Page = () => (
             </a>
         </h4>
         */}
-        <p>&nbsp;</p> 
-        
+        <p>&nbsp;</p>
+
         <h4>
             <a href="/ArcNews.pdf">
                 “ArcNews Spring 2006 Issue — Cattaraugus County, New York, Uses GIS to

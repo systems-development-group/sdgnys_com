@@ -7,7 +7,7 @@ param(
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop";
-
+#Requires -Version 6.0
 
 function CompareSiteVersion(
     [string] $filePath = $cacheFile
@@ -27,7 +27,6 @@ function CompareSiteVersion(
 }
 
 
-# Note that 'return' is stupid in Powershell and doesn't actually short-cicuit the function
 function RunTest_GetEndpoints(
     [string[]] $uriList
 ) {
@@ -82,7 +81,7 @@ Write-Host -ForegroundColor 'Green' "TESTS PASSED"
 [string] $completionMsg = "`n`n" + `
     "The next step is to merge the local staging branch into local master branch, `n" + `
     "push to remote master so a deploy to production is triggered, `n" + `
-    "and checkout staging once again to continue working. HINT: Run the one-liner below or run _DeployPro.sh. `n" + `
+    "and checkout staging once again to continue working. HINT: Run the one-liner below or run _DeployProd.sh. `n" + `
     "git checkout master && git merge staging && git push && git checkout staging & git fetch & git merge master" 
 Write-Host -ForegroundColor 'Yello' $completionMsg
     
